@@ -67,7 +67,8 @@
     "appId": "io.orthogonalj.timer.timer.v0.1",
     "productName": "Timer",
     "nsis": {
-      "oneClick": false
+      "oneClick": false,
+      "license": "LICENSE.txt"
     },
     "win": {
       "target": [
