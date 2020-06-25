@@ -1,0 +1,15 @@
+{
+    "name": "timer-app",
+    "productName": "timer",
+    "version": "1.0.0",
+    "description": "timer application",
+    "author": "OrthogonalJ",
+    "main": "main.js",
+    "scripts": {},
+    "license": "MIT",
+    "dependencies": {
+        "moment": "^2.26.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+  }

@@ -1,0 +1,11 @@
+# Editors
+.vscode
+
+# Config
+.env.prod
+
+# Node
+node_modules
+
+# Build artifacts
+dist

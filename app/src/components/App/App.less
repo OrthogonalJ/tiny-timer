@@ -1,0 +1,68 @@
+@import "../../global.less";
+
+@tiny-window: ~"only screen and (max-width: 500px)";
+
+.app {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .button-container {
+    button {
+      font-size: 2em;
+      margin: 2px;
+      min-width: 80px;
+    }
+  }
+
+  .time-container {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 500px;
+
+    .time {
+      height: 50px;
+      line-height: 50px;
+      padding: 10px 10px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 2em;
+      user-select: none;
+
+      &:active {
+        background-color: #0078d7;
+      }
+    }
+  }
+
+  @media @tiny-window {
+    padding: 0;
+    margin: 0;
+
+    .time-container{
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      .time {
+        width: 100%;
+        margin: 0;
+        padding: 10px 10px;
+      }
+    }
+
+    .button-container, .options-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+
